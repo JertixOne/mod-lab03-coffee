@@ -17,7 +17,7 @@ void Automata::AddCoin(int cash) {
     if (state == WAIT) state = ACCEPT;
     amount += cash;
 }
-void Automata::ChoiceMenu(int _position) {
+void Automata::ChoiceMenu(int position) {
     if (state == ACCEPT) {
         selectedMenu = position;
         state = CHECK;
